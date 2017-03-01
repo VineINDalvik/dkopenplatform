@@ -88,12 +88,13 @@ a{
     /*    direction: rtl;*/
 }
 p {
-    margin: 0 0 15px;
     color: #000;
-    padding-top: 10px;
+    padding: 20px 0px;
+    font-size: 1rem;
 }
 
 .p-white {
+   margin-top: 10px; 
    color: #fff;
 }
 
@@ -197,13 +198,10 @@ h6 {
     font-size: 1rem;
     margin-bottom: .9rem;
 }
-p {
-    line-height: 2rem;
-    font-size: 0.875rem;
-}
 p:last-child {
     margin-bottom: 0px;
 }
+
 /*.home-wrap h1,*/
 .home-wrap h2,
 .home-wrap h3,
@@ -426,6 +424,7 @@ Button
     border:1px solid #5e9a28;
     color:#5e9a28;
     padding: 10px 45px 10px 0px;
+    font-size: 1rem;
 }
 
 
@@ -573,6 +572,9 @@ input::-ms-input-placeholder {
     border-color: transparent; 
     transition: all .6s;
     margin: 15px auto;
+}
+.menu-margin {
+    margin-right: 50px;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:active{
     color:#0eb493;
@@ -731,7 +733,12 @@ h3:hover {
     font-size: 2rem;
     color: #fff;
     text-align: center;
-    padding: 30px 0px;
+    padding: 50px 120px;
+}
+
+.pro-content img{
+    width: 80px;
+    height: 80px;
 }
 
 .main .service:hover>img.thing1 {
@@ -797,9 +804,19 @@ h3:hover {
     text-align: center;
     height: auto;
 }
+.products .prod-content{
+    padding: 20px 150px;
+}
+.products .prod-content .thing {
+    padding: 10px 0px;
+}
 .products h3 {
     color: #000;
     padding-top: 10px;
+}
+
+.row-margin {
+    padding-top: 20px;
 }
 
 .solution {
@@ -811,13 +828,14 @@ h3:hover {
 
 .device {
     background-color: #fff;
-    padding: 30px 30px;
+    padding: 30px 120px;
     text-align: center;
     height: auto;
 }
 
 .portfolio-item{
-    margin-top: 30px;
+    margin-top: -30px;
+    padding: 60px 0px;
 }
 .portfolio-item .hover-bg{
     height: 100%;
@@ -867,7 +885,7 @@ h3:hover {
 
 .cooperation {
     background-color: #fff;
-    margin: 20px 250px;
+    margin: 40px 250px 20px;
     text-align: center;
     height: auto;
 }
@@ -931,7 +949,7 @@ h3:hover {
 .moments{
     color:#fff;
     text-align: center;
-    padding-bottom: 80px;
+    padding: -20px 110px 80px;
 }
 
 .moments .moments_more {
@@ -942,12 +960,13 @@ h3:hover {
 
 .mobg{
     background-color: #f8f8f8;
+    margin-bottom: 100px;
 }
 
 .moments .mo_maintab{
     width: 100%;
     float: left;
-    left: 8%;
+    left: 10%;
     margin: 20px 0px;
     padding: 10px;
     background: transparent;
@@ -1161,7 +1180,6 @@ button.btn-md {
     color: #444;
     letter-spacing: 1px;
     margin: 0;
-    font-size: 0.8125rem;
     border-radius: 0px;
     margin-top: 0px;
     background-color: transparent;
@@ -1642,9 +1660,6 @@ button.btn-md:hover {
     text-decoration: none;
 
 }
-
-
-
 
 
 

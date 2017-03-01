@@ -945,8 +945,10 @@ h3:hover {
 }
 
 .moments .mo_maintab{
-    margin-bottom: 30px;
-    margin-left: 40px;
+    width: 100%;
+    float: left;
+    left: 8%;
+    margin: 20px 0px;
     padding: 10px;
     background: transparent;
     text-decoration:none;

@@ -30,6 +30,11 @@
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
 
+        <!-- Slider
+    ================================================== -->
+        <link href="assets/css/owl.carousel.css" rel="stylesheet" media="screen">
+        <link href="assets/css/owl.theme.css" rel="stylesheet" media="screen">
+
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="200">
@@ -46,7 +51,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="nave_menu">
-                                <nav class="navbar navbar-default">
+                                <nav class="navbar navbar-default" role="navigation">
                                     <div class="container-fluid">
                                         <!-- Brand and toggle get grouped for better mobile display -->
                                         <div class="navbar-header">
@@ -124,21 +129,46 @@
             </header> <!--End of header -->
 
 
+            <!-- Full Page Image Background Carousel Header -->
+        <section id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <img class="fill" src="assets/images/banner.png"></img>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <img class="fill" src="assets/images/banner.png"></img>
+                
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <img class="fill" src="assets/images/banner.png"></img>
+                
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </section>
 
 
             <section id="main" class="main">
-            <div class="single_features_slide">
-                <div class="single_ft_s_item">
-                    <img src="assets/images/banner.png">
-                </div>
-                <div class="single_ft_s_item">
-                    <img src="assets/images/banner.png">
-                </div>
-                <div class="single_ft_s_item">
-                    <img src="assets/images/banner.png">
-                </div>
-            </div>
+                
                 <div class="pro-title">
                     <h2><strong>开放体系架构</strong></h2>
                     <p>为解决物体是什么、物体在哪里、物体怎么用与物体安全四个根本问题，我们从物体描述、交互、发现、安全四个方面入手</p>
@@ -722,7 +752,6 @@
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal -->
             </div>
-
         </div>
 
         <!-- START SCROLL TO TOP  -->
@@ -743,8 +772,15 @@
         <script src="http://maps.google.com/maps/api/js"></script>
         <script src="assets/js/gmaps.min.js"></script>
 
+        <script src="assets/js/owl.carousel.js"></script>
+
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            $('.carousel').carousel({
+                interval: 3000 //changes the speed
+            })
+        </script>
 
     </body>
 </html>

@@ -10,31 +10,15 @@ Author URI: http://www.bootstrapthemes.co
     body {
         font-size: 1rem;
     }
-
-    .service .nav-tabs>li>a{
-        width:195px;
-        font-size: 95%;
-    }   
-    .service_tabe_menu.nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
-        width:195px;
-    }
-
-    .about .single_about .single_ab_text {
-        margin-left: 50px;
-    }
-
-    .team .single_team_content .single_team_text_overlay .team_overlay_socail a i { 
-        width: 22px;
-        height: 22px;
-        line-height: 22px;
-    }
     .btn-md {
         padding: 10px 20px 10px 0px;
     }
-    .about_skill_area .about_tabe .about_tabe_menu li a {
-        width: 140px;
-        line-height: 50px;
-    }
+
+}
+@media (max-width: 995px) {
+    /*.footer-frame {
+        max-height: 500px;
+    }*/
 
 }
 
@@ -55,38 +39,6 @@ Author URI: http://www.bootstrapthemes.co
         color: #696f7c;
         line-height: 1.475rem;
     }
-    .single_othersservice_icon h4 {
-        font-size: .675rem;
-        line-height: 2rem;
-    }
-    .service .nav-tabs>li>a{
-        width:158px;
-        font-size: 95%;
-    }   
-    .service_tabe_menu.nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
-        width:158px;
-    }
-
-    .about_skill_area .about_tabe .about_tabe_menu li a {
-        width: 95px;
-        line-height: 60px;
-        font-size: 0.775rem;
-    }
-    .single_team_text_overlay h4{
-        font-size:0.675rem;
-    }
-    .single_team_text_overlay p{
-        font-size:0.675rem;
-    }
-    .team .single_team_content .single_team_text_overlay .team_overlay_socail a i {
-        width: 14px;
-        height: 14px;
-        line-height: 14px;
-        font-size: .675rem;
-    }
-    .team .single_team_content .single_team_text_overlay{
-        top:25%;
-    }
     .choose .main_choose .single_choose{
         margin-top:80px;
     }
@@ -106,69 +58,10 @@ Author URI: http://www.bootstrapthemes.co
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         border-color: transparent;
-        background-color: rgba(67, 52, 108, 0.5);
         text-align: center;
     }
     .main_menu_bg .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
         border-bottom: 0px solid;
-    }
-    .service .nav-tabs>li>a{
-        margin-bottom:10px;
-    }
-
-    .single_features_text{
-        margin-top:30px;
-    }
-    .about_tabe{
-        padding: 0px 10px;
-    }
-    .about_skill_area .about_tabe .about_tabe_menu{
-        margin-left:0;
-    }
-    .about_skill_area .about_tabe .about_tabe_menu li a {
-        width: 100px;
-        line-height: 50px;
-    }
-
-    .about_skill {
-        margin-top: 30px;
-        padding: 0px 10px;
-    }
-    .single_othersservice_icon h4 {
-        font-size: .875rem;
-        line-height: 2rem;
-    }
-    .main_clinetslogo{
-        margin-top:30px;
-    } 
-    .single_counter{
-        text-align: center;
-        padding-bottom:30px;
-        overflow: hidden;
-    }
-    /*    .grid-item {
-            width: 49.93%;
-        }
-        .portfolio .grid_item_overlay {
-            padding-top: 37%;
-        }*/
-    .team .single_team_content .single_team_text_overlay .team_overlay_socail a i {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size:0.875rem;
-    }
-    .team .single_team_content .single_team_text_overlay h4{
-        font-size:0.875rem;
-    }
-    .team .single_team_content .single_team_text_overlay p{
-        font-size:0.875rem;
-    }
-    .portfolio .head_title{
-        text-align: center;
-    }
-    .portfolio .separator{
-        margin:20px auto;
     }
     .btn-md {
         padding: 10px 20px 10px 0px;
@@ -191,19 +84,7 @@ Author URI: http://www.bootstrapthemes.co
         padding: 10px;
     }
 
-    .single_widget ul li a i{
-        width:3%;
-        margin-right:2%;
-    }
-    .contact .single_info_icon {
-        width:15%;
-        float: left;
-        margin-right: 10%;
-    }
-    .contact .single_info_text {
-        float:left;
-        width:75%;
-    }
+   
     .navbar-form {
         border-top: 0px solid transparent;
         border-bottom: 0px solid transparent;
@@ -220,6 +101,23 @@ Author URI: http://www.bootstrapthemes.co
     }
 
 
+    .navbar-default .navbar-collapse {
+        overflow-y:scroll;border-color: transparent;
+        background-color: rgba(0,0,0,0.5);
+        text-align: center;
+        width: 100%;
+        margin: 10px 0px;
+        max-height: 390px;
+  }
+    .navbar .container-fluid{
+        padding: 0;
+    }
+    .navbar-collapse ul{
+        margin-right: 0;
+        max-height: 390px;
+        overflow-y:scroll;
+    }
+
 }
 
 
@@ -232,11 +130,6 @@ Author URI: http://www.bootstrapthemes.co
     .btn-md {
         padding: 10px 10px 10px 0px;
     }
-    .about_skill_area .about_tabe .about_tabe_menu li a {
-        width: 75px;
-    }
-
-
 }
 
 
@@ -249,18 +142,82 @@ Author URI: http://www.bootstrapthemes.co
     html {
         font-size: 60.5%;
     }
-    .about_skill_area .about_tabe .about_tabe_menu li a {
-        width: 60px;
+
+}
+
+@media (max-width: 1050px) and (min-width: 768px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        background-color: #373942;
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    .navbar-default .navbar-collapse{
+        
+        overflow-y:scroll;border-color: transparent;
+        background-color: rgba(0,0,0,0.5);
+        text-align: center;
+        width: 100%;
+        margin: 10px 0px;
+        max-height: 390px;
+    }
+    .navbar .container-fluid{
+        padding: 0;
+    }
+    .navbar-collapse ul{
+        margin-right: 0;
+        max-height: 390px;
+        overflow-y:scroll;
+    }
+    .main_menu_bg .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+        border-style: none;
     }
 
-
-
-
-
-
-
-
-
-
+    .veti-line{
+        position: relative;
+        left: 0px;
+    }
+    .navbar_logo a{
+        position: relative;
+        left: 20px;
+    }
+    #erweima{
+        position: absolute;
+        width: 30%;
+        right: 35%;
+        height: 300px;
+        bottom: 0;
+        margin: 0 auto;
+        z-index: 1000;
+    }
 }
 

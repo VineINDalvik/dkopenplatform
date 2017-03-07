@@ -707,6 +707,15 @@ input::-ms-input-placeholder {
         position: relative;
         left: 20px;
     }
+    #erweima{
+        position: absolute;
+        width: 30%;
+        right: 35%;
+        height: 300px;
+        bottom: 0;
+        margin: 0 auto;
+        z-index: 1000;
+    }
 }
 
 .navbar-brand {
@@ -756,7 +765,7 @@ input::-ms-input-placeholder {
     opacity: 1; 
 }
 .dropdown-menu .navbar-form {
-    margin-right: -30px;
+    margin-right: 0px;
 }
 
 

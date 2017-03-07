@@ -1066,7 +1066,7 @@ h3:hover {
 /*video section css*/
 
 .video{
-    /*background: url(../images/movie.png) no-repeat top center;*/
+    background: url(../images/movie.png) no-repeat top center;
     background-size:cover;
 }
 .video .main_video{
@@ -1464,13 +1464,13 @@ button.btn-md:hover {
 }
 
 
-.input-group{
+.modal .input-group{
     left: 50%;
     margin-left: -165px;
     padding: 10px 0px;
     width: 330px;
 }
-.btn-dk{
+.modal .btn-dk{
     margin: 10px 120px;
     background-color: #0eb493;
     color: #fff;
@@ -1485,6 +1485,45 @@ button.btn-md:hover {
     margin-bottom: 30px;
     font-size: 1rem;
     text-align: center;
+}
+
+.child_bg {
+    background-color: #f8f8f8;
+}
+
+.regis_content .input-group{
+    margin-top: 30px;
+    left: 50%;
+    margin-left: -220px;
+    width:440px;
+
+}
+
+.regis_content h3{
+    margin-top: 30px;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.regis_content .input-group .col-form-label{
+    float: left;
+    width: auto;
+}
+.regis_content .input-group .vital {
+    float: left;
+    margin-top: 5px;
+}
+
+.regis_content .btn-dk {
+    margin: 30px;
+    background-color: #0eb493;
+    color: #fff;
+    height: 40px;
+    width: 330px;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    right: 0px;
+
 }
 
 /*.btn {

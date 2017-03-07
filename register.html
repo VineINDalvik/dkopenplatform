@@ -30,13 +30,13 @@
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="200">            
 
-    <div class="culmn">
+    <div class="culmn child_bg">
             <header id="main_menu" class="header navbar-fixed-top">            
                 <div class="main_menu_bg products_bg">
-                    <div class="container">
-                        <div class="row">
+                    <div class="">
+                        <div class="">
                             <div class="nave_menu">
-                                <nav class="navbar navbar-default">
+                                <nav class="navbar navbar-default" role="navigation">
                                     <div class="container-fluid">
                                         <!-- Brand and toggle get grouped for better mobile display -->
                                         <div class="navbar-header">
@@ -46,12 +46,12 @@
                                                 <span class="icon-bar"></span>
                                                 <span class="icon-bar"></span>
                                             </button>
-                                            <div class="navbar_logo">
-                                                <a class="navbar-brand" href="index.html">
-                                                    <img src="assets/images/logo.png"/>
-                                                </a>
-                                                <div class="veti-line"></div>
-                                                <div class="navbar-title" onclick="location='index.html'">中国电科物联网开放平台</div>
+                                            <div class="navbar_logo" >
+                                                <a href="index.html">
+                                                    <img src="assets/images/logo.png"/ style="width: 40px;">
+                                                    <div class="veti-line" style=""></div>
+                                                    <div style="display: inline-block;color: #fff;font-size: 1.2rem;position: relative;left: 7px;">中国电科物联网开放平台</div>
+                                                </a>                                       
                                             </div>
                                         </div>
 
@@ -63,14 +63,12 @@
 
                                             <ul class="nav navbar-nav navbar-right">
                                                 <li><a href="products.html" class="page-scroll">产品</a></li>
-                                                <li><a href="#cases" class="page-scroll">成功案例</a></li>
-                                                <li><a href="#cooperation" class="page-scroll">合作与生态</a></li>
+                                                <li><a href="success.html" class="page-scroll">成功案例</a></li>
+                                                <li><a href="team_ecology.html" class="page-scroll">合作与生态</a></li>
                                                 <li><a href="doc.html" class="page-scroll">开发文档</a></li>
                                                 <li><a href="#testimonial" class="page-scroll">在线演示</a></li>
                                                 <li><a href="#contact" class="page-scroll">社区</a></li>
-                                                <li><a href="" class="page-scroll">新闻与动态</a></li>
-
-
+                                                <li><a href="moments.html" class="page-scroll">新闻与动态</a></li>
                                                 <li>
                                                     <a href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                                         <span class="glyphicon glyphicon-search"></span></a>
@@ -124,36 +122,154 @@
                     </ul>
                     </div>
                 </div>
-                <div class="container tab-content">
+                <div class="container tab-content regis_content">
                                 <div class="row tab-pane fade in active" id="c-content">
+                                    <h3>账号信息</h3>
                                             <div class="input-group row">
-                                                <label style="font-size: 14px;color: #FF0000" class="">*</label><label style="color: #000;font-size: 14px;margin-top: 7px;" class="inline col-form-label" for="userName">用户名
-                                                </label>
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">用户名     </label>
                                                 <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-user"></span></span>
                                                 <input type="text" class="inline form-control" aria-describedby="user">
                                             </div>
 
                                         <div class="input-group row">
-                                                <label style="font-size: 14px;color: #FF0000" class="">*</label><label style="color: #000;font-size: 14px;margin-top: 7px;" class="inline col-form-label" for="userPsd">密码
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userPsd">密码      </label>
+                                                <span class="inline input-group-addon" id="userPsd"><span class="glyphicon  glyphicon-lock"></span></span>
+                                                <input  type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">确认密码    
+                                                </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-lock"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+
+                                        <div class="input-group row">
+                                                <label style="font-size: 14px;color: transparent;" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userPsd">所在地     
+                                                </label>
+                                                <span class="inline input-group-addon" id="userPsd"><span class="glyphicon  glyphicon-map-marker"></span></span>
+                                                <input  type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">手机号     
+                                                </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-phone"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+
+                                        <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userPsd">手机验证码
                                                 </label>
                                                 <span class="inline input-group-addon" id="userPsd"><span class="glyphicon  glyphicon-lock"></span></span>
                                                 <input  type="text" class="inline form-control" aria-describedby="user">
                                             </div>
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">邮箱      
+                                                </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-envelope"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+
+                                        <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userPsd">邮箱验证码   
+                                                </label>
+                                                <span class="inline input-group-addon" id="userPsd"><span class="glyphicon  glyphicon-lock"></span></span>
+                                                <input  type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+                                            <button class="btn-dk btn" data-dismiss="modal">立即注册</button>
                                 </div>
                                 <div class="row tab-pane fade in" id="b-content">
-                                    <form method="post" action="" class=" form-horizontal" >
-                                        <div class="control-group">
-                                            <div class="control-label">
-                                                <label for="userPsd"></label>
+                                    <div class="row tab-pane fade in active" id="c-content">
+                                    <h3>账号信息</h3>
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">用户名     </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-user"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
                                             </div>
-                                            <div class="controls">
-                                                <div class="input-group" >
-                                                    <span class="input-group-addon" id="userPsd"><span class="glyphicon  glyphicon-lock"></span></span>
-                                                    <input type="text" class="form-control" aria-describedby="psd">
-                                                </div>
+
+                                        <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userPsd">密码      </label>
+                                                <span class="inline input-group-addon" id="userPsd"><span class="glyphicon  glyphicon-lock"></span></span>
+                                                <input  type="text" class="inline form-control" aria-describedby="user">
                                             </div>
-                                        </div>
-                                    </form>
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">确认密码    
+                                                </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-lock"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+                                        <h3>公司信息</h3>
+                                        <div class="input-group row">
+                                                <label style="font-size: 14px;color: transparent;" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userPsd">公司名称     
+                                                </label>
+                                                <span class="inline input-group-addon" id="userPsd"><span class="glyphicon  glyphicon-flag"></span></span>
+                                                <input  type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">所在地     
+                                                </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-map-marker"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">详细地址     
+                                                </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-map-marker"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+
+                                        <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userPsd">公司行业
+                                                </label>
+                                                <span class="inline input-group-addon" id="userPsd"><span class="glyphicon  glyphicon-road"></span></span>
+                                                <input  type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+                                            <h3>联系人信息</h3>
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">联系人      
+                                                </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-user"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: transparent;" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">部门      
+                                                </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-home"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: transparent;" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">联系电话     
+                                                </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-phone-alt"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">手机号     
+                                                </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-phone"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+
+                                        <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userPsd">手机验证码
+                                                </label>
+                                                <span class="inline input-group-addon" id="userPsd"><span class="glyphicon  glyphicon-lock"></span></span>
+                                                <input  type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+                                            <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userName">邮箱      
+                                                </label>
+                                                <span class="inline input-group-addon" id="userName"><span class="glyphicon  glyphicon-envelope"></span></span>
+                                                <input type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+
+                                        <div class="input-group row">
+                                                <label style="font-size: 14px;color: #FF0000" class="vital">*</label><label style="color: #000;font-size: 16px;margin-top: 7px;" class="inline col-form-label" for="userPsd">邮箱验证码   
+                                                </label>
+                                                <span class="inline input-group-addon" id="userPsd"><span class="glyphicon  glyphicon-lock"></span></span>
+                                                <input  type="text" class="inline form-control" aria-describedby="user">
+                                            </div>
+                                            <button class="btn-dk btn" data-dismiss="modal">立即注册</button>
                                 </div>
                 </div>
             </section>
@@ -281,7 +397,7 @@
                         <div class="modal-footer">
                             <button class="btn-dk btn" data-dismiss="modal">登录</button>
                             <a style="float: left;margin-left: 120px" href="">忘记密码？</a>
-                            <a style="float: right;margin-right: 120px" href="">没有账号？立即注册</a>
+                            <a style="float: right;margin-right: 120px" href="register.html">没有账号？立即注册</a>
                          </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal -->

@@ -116,7 +116,7 @@
             </header> <!--End of header -->
 
             <section id="moments" class="moments mobg">
-            <img style="margin-top:80px;margin-bottom:50px;" src="assets/images/moments_banner.png">
+                <img style="margin-top:80px;margin-bottom:50px;" src="assets/images/moments_banner.png">
                 <div class="row">
                     <div class="col-sm-3 nav nav-tabs mo_maintab">
                     <ul>
@@ -263,18 +263,39 @@
                             <div class="main_footer">
                                 <div class="row">
 
-                                    <div class="col-sm-6 col-xs-12">
+                                    <div class="col-sm-6 col-xs-12  col-md-5">
                                         <div class="copyright_text">
                                             <p class=" wow fadeInRight" data-wow-duration="1s">Made with <i class="fa fa-heart"></i> by <a href="http://isa.cetc.com.cn/">中国电科</a>2016. All Rights Reserved</p>
                                         </div>
                                     </div>
 
-                                    <div class="col-sm-6 col-xs-12">
+                                    <div class="col-sm-6 col-xs-12  col-md-3 coll">
+                                        <div id="phone" class="coll-son" style="display: none;">
+                                            <p style="color: #fff;">联系电话：13500000000</p>
+                                        </div>
+                                        <div id="envelope" class="coll-son" style="display: none;">
+                                            <p style="color: #fff;">电子邮箱：13500000@qq.com</p>
+                                        </div>
+                                        <div id="weixin" class="coll-son" style="display: none;">
+                                            <p style="color: #fff;">微信：1350000000</p>
+                                        </div>
+                                        <div id="qq" class="coll-son" style="display: none;">
+                                            <p style="color: #fff;">QQ：1350000000</p>
+                                        </div>
+                                        <!-- <div id="weibo" class="coll-son" style="display: none;">
+                                            <p style="color: #fff;">微博：1350000000</p>
+                                        </div>
+                                        <div id="linkedin" class="coll-son" style="display: none;">
+                                            <p style="color: #fff;">微信：1350000000</p>
+                                        </div> -->
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 col-md-4">
                                         <div class="flowus">
-                                            <a href=""><i class="fa fa-phone"></i></a>
-                                            <a href=""><i class="fa fa-envelope"></i></a>
-                                            <a href=""><i class="fa fa-weixin"></i></a>
-                                            <a href=""><i class="fa fa-qq"></i></a>
+                                            <a href="#phone" onmouseover="show_phone()" onmouseout="hide()"><i class="fa fa-phone"></i></a>
+                                            <a href="#phone" onmouseover="show_envelope()" onmouseout="hide()"><i class="fa fa-envelope"></i></a>
+                                            <a href="#phone" onmouseover="show_weixin()" onmouseout="hide()"><i class="fa fa-weixin"></i></a>
+                                            <a href="#phone" onmouseover="show_qq()" onmouseout="hide()"><i class="fa fa-qq"></i></a>
                                             <a href=""><i class="fa fa-weibo"></i></a>
                                             <a href=""><i class="fa fa-linkedin"></i></a>
                                         </div>

@@ -220,4 +220,48 @@ Author URI: http://www.bootstrapthemes.co
         z-index: 1000;
     }
 }
+/*-----------------------------------------*/
+@media (max-width: 767px){
+    .navbar_logo a{
+        position: relative;
+        left: 20px;
+    }
+    .navbar-header .navbar-toggle{
+        position: relative;
+        right: 20px;
+    }
+}
+@media (max-width: 767px){
+    .footer .main_footer .coll p{
+        text-align: center;
+    }
+    .footer .main_footer .coll{
+        position: absolute;
 
+    }
+    .footer .main_footer .coll-son{
+        background-color: #000;
+        margin:0 30%;
+        opacity: 0.8;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .footer .main_footer .coll{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .footer .main_footer .coll{
+        float: right;
+    }
+}
+@media (min-width: 768px){
+    .footer .main_footer .coll p{
+        text-align: right;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #respon_p p{
+        font-size: 1rem;
+    }
+}

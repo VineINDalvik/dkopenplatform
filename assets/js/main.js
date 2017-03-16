@@ -278,14 +278,64 @@ function bihe_4(a){
     $('#txt_40').css('display','block');
     $('#txt_41').css('display', 'none');
 }
-
+//选择了物联网生态圈
 function ecosphere(a){
     $('#content_1').css('display','block');
     $('#content_2').css('display','none');
+
     //a.css('border-left','2 solid red');
 }
+//选择了合作伙伴
 function cooperate(a){
     $('#content_1').css('display','none');
     $('#content_2').css('display','block');
     //a.css('border-left','2 solid red');
+}
+//首页的选择介入设备的函数
+
+function choose_device(a){
+    $("#lightbox .device0").css("display","none");
+    $("."+a).css("display","inline-block");
+}
+//////合作与生态选择
+function clicked(a){
+    $(".li_clicked").removeClass("li_clicked");
+    $("#"+a).addClass("li_clicked");
+}
+///////底层显示隐藏的电话
+function show_phone()
+{
+    $(".coll-son").css("display","none");
+    $("#phone").css("display","block");
+}
+function hide()
+{
+    $(".coll-son").css("display","none");
+    //$("#phone").css("display","block");
+}
+function show_envelope()
+{
+    $(".coll-son").css("display","none");
+    $("#envelope").css("display","block");
+}
+function show_weixin()
+{
+    $(".coll-son").css("display","none");
+    $("#weixin").css("display","block");
+}
+function show_qq()
+{
+    $(".coll-son").css("display","none");
+    $("#qq").css("display","block");
+}
+// ----------产品页选择左列表
+function product_choose(a){
+    $(".panel-heading h4").removeClass("choose_active");
+    $("#"+a+" h4").addClass("choose_active");
+    //$("#headingOne").css("background-color","#f8f8f8");
+}
+//
+function doc_choose(a){
+    $(".li_hover").removeClass("choose_active");
+    $("#"+a).addClass("choose_active");
 }

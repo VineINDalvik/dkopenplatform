@@ -332,10 +332,19 @@ function show_qq()
 function product_choose(a){
     $(".panel-heading h4").removeClass("choose_active");
     $("#"+a+" h4").addClass("choose_active");
+    //console.log("111");
     //$("#headingOne").css("background-color","#f8f8f8");
 }
 //
 function doc_choose(a){
     $(".li_hover").removeClass("choose_active");
     $("#"+a).addClass("choose_active");
+}
+
+//-----------首页选择产品的第一个选项
+function index_choose_procuct(a)
+{
+    location.href="products.html?targ="+a;
+    //product_choose("headingOne");
+
 }

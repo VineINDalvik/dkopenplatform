@@ -28,7 +28,7 @@
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="200">            
+    <body data-spy="scroll" data-target=".navbar" data-offset="200" onload="load()">            
 
     <div class="culmn">
             <header id="main_menu" class="header navbar-fixed-top">            
@@ -447,5 +447,18 @@
         <script src="assets/js/main.js"></script>
 
     </body>
+    <script type="text/javascript">
+        function load(){
+            var target=GetQueryString("targ");
+            //alert(target);
+            product_choose(target);
+        }
+        function GetQueryString(name) {
+               var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+               var r = window.location.search.substr(1).match(reg);
+               if (r!=null) return (r[2]); return null;
+            }
+            
+    </script>
 </html>
 

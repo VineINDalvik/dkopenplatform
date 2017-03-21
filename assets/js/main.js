@@ -336,9 +336,11 @@ function product_choose(a){
     //$("#headingOne").css("background-color","#f8f8f8");
 }
 //
-function doc_choose(a){
+function doc_choose(a,b){
     $(".li_hover").removeClass("choose_active");
     $("#"+a).addClass("choose_active");
+    $(".panel-title").removeClass("choose_active");
+    $("#"+b).addClass("choose_active");
 }
 
 //-----------首页选择产品的第一个选项
@@ -347,4 +349,12 @@ function index_choose_procuct(a)
     location.href="products.html?targ="+a;
     //product_choose("headingOne");
 
+}
+function mouse_in(){
+    $("#join1").css("display","none");
+    $("#join2").css("display","inline-block");
+}
+function mouse_out(){
+    $("#join2").css("display","none");
+    $("#join1").css("display","inline-block");
 }

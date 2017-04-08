@@ -617,6 +617,10 @@ input::-ms-input-placeholder {
     left: 4%;
 }
 
+.navbar-logo img{
+    width: 180px;
+}
+
 .veti-line {
     display: inline-block;
     border-top: 18px solid #fff;

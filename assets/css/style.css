@@ -614,7 +614,7 @@ input::-ms-input-placeholder {
     display: inline-block;
     float: left;
     position: relative;
-    left: 0px;
+    left: 4%;
 }
 
 .veti-line {

@@ -1313,7 +1313,11 @@ button.btn-md:hover {
     -webkit-column-width: 33.33333333333333%;
     -moz-column-width: 33.33333333333333%;
     column-width: 33.33333333333333%;
+    /*-webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;*/
 }
+
 .tile { 
     display: none;
 

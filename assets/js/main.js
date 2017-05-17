@@ -297,6 +297,20 @@ function choose_device(a){
     $("#lightbox .device0").css("display","none");
     $("."+a).css("display","inline-block");
 }
+function solutionchoose(a){
+    //$("#portfoliowork ").css("column-count","2");
+    //$("#portfoliowork .single_portfolio").css("display","none");
+    //$("."+a).css("display","inline-block");
+    //$("#portfoliowork ."+a+" img").attr("src","assets/images/pf6.jpg");
+    if(a=="clas_1")
+        $("#portfoliowork ."+a+" img").attr("src","assets/images/pf6.jpg");
+    if(a=="clas_2")
+        $("#portfoliowork ."+a+" img").attr("src","assets/images/pf1.jpg");
+    if(a=="clas_3")
+        $("#portfoliowork ."+a+" img").attr("src","assets/images/pf2.jpg");
+    if(a=="clas_4")
+        $("#portfoliowork ."+a+" img").attr("src","assets/images/pf7.jpg");
+}
 //////合作与生态选择
 function clicked(a){
     $(".li_clicked").removeClass("li_clicked");

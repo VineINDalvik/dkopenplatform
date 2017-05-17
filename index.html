@@ -743,15 +743,15 @@
                         <div class="modal-body">
                             <div class="input-group">
                                 <span class="input-group-addon" id="user"><span class="glyphicon glyphicon-user"></span></span>
-                                <input type="text" class="form-control" aria-describedby="user">
+                                <input id="login_user" type="text" class="form-control" aria-describedby="user">
                             </div>
                             <div class="input-group" >
                                 <span class="input-group-addon" id="psd"><span class="glyphicon glyphicon-lock"></span></span>
-                                <input type="text" class="form-control" aria-describedby="psd">
+                                <input id="login_pwd" type="text" class="form-control" aria-describedby="psd">
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-dk" data-dismiss="modal">登录</button>
+                            <button id="login_btn" class="btn btn-dk" data-dismiss="modal">登录</button>
                             <div class="">
                                 <a style="float: left;margin-left: 20%;" href="">忘记密码？</a>
                                 <a style="float: right;margin-right: 20%;" href="register.html">没有账号？立即注册</a>
@@ -782,7 +782,37 @@
         <script>
             $('.carousel').carousel({
                 interval: 3000 //changes the speed
-            })
+            });
+
+            $('#login_btn').onclick(function(){
+                var name = ('#login_user').val();
+                var psd = ('#login_psd').val();
+                if(name == null || psd == null) alert('用户名或密码不得为空！'); 
+                //if(!checkLoginValid(name,psd)) alert('输入符合');
+                //md5
+                $.ajax({url: "/user/login",
+                    type: "post",
+                    dataType: "json",
+                    data: {name: name,psd: psd}, //"name=John&psd=Boston"
+                    context: document.body,
+                    beforeSend: function(XMLHttpRequest){
+
+                    },
+                    success: function(data, textStatus){
+                        if(data['code']){
+                            alert('登录成功');
+                        }else{
+                            alert('登录失败');
+                        }
+                    },
+                    complete: function(XMLHttpRequest, textStatus){
+                        //HideLoading();
+                    },
+                    error: function(){
+                        //请求出错处理
+                    }
+                });
+
         </script>
 
     </body>

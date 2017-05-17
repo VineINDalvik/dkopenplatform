@@ -271,10 +271,11 @@
                 <div class="row row-margin">
                     <div class="col-sm-12">
                                 <div id="filters" class="toolbar mb2 mt2">
-                                    <button class="btn-md fil-cat filter active" href=""  data-filter=".bcards">智慧城市</button>
-                                    <button class="btn-md fil-cat filter" data-rel="web" data-filter=".web0">智慧社区</button>
-                                    <button class="btn-md fil-cat filter" data-rel="flyers" data-filter=".web">智慧制造</button> 
-                                    <button class="btn-md fil-cat filter" data-rel="bcards" data-filter=".flyers">智慧你我他</button>
+                                    <button class="btn-md fil
+                                    -cat filter active" href="clas_1"  data-filter=".clas_1" onclick=solutionchoose("clas_1")>智慧城市</button>
+                                    <button class="btn-md fil-cat filter" data-rel="web" data-filter=".clas_2" onclick=solutionchoose("clas_2")>智慧社区</button>
+                                    <button class="btn-md fil-cat filter" data-rel="flyers" data-filter=".clas_3" onclick=solutionchoose("clas_3")>智慧制造</button> 
+                                    <button class="btn-md fil-cat filter" data-rel="bcards" data-filter=".clas_4" onclick=solutionchoose("clas_4")>智慧你我他</button>
                                 </div> 
 
                     </div>
@@ -282,63 +283,73 @@
 
                         <div style="clear:both;"></div>     
                             <div id="portfoliowork"> 
-                                <div class="single_portfolio tile scale-anm web0 grid-item-width2" >
+                                <div class="single_portfolio tile scale-anm web0 clas_1  clas_2  clas_4 grid-item-width2 " >
                                     <img src="assets/images/pf1.jpg" alt="" />
                                     <div class="grid_item_overlay g_overlay_1">
                                         <p>2017年国家重大科技专项申报已经全面启动。</p>
                                         <h4 class="square_button" onClick=""><strong>查看详情</strong></h4>
                                     </div>
                                 </div>
-                                <div class="single_portfolio tile scale-anm bcards" >
+                                <div class="single_portfolio tile scale-anm bcards clas_1 clas_2 clas_4" >
                                     <img src="assets/images/pf2.jpg" alt="" />
                                     <div class="grid_item_overlay">
                                         <p>2017年国家重大科技专项申报已经全面启动。</p>
                                         <h4 class="square_button" onClick=""><strong>查看详情</strong></h4>
                                     </div>
                                 </div>
-                                <div class="single_portfolio tile scale-anm web ">
+                                <div class="single_portfolio tile scale-anm web clas_1 clas_2 clas_3 clas_4">
                                     <img src="assets/images/pf6.jpg" alt="" />
                                     <div class="grid_item_overlay">
                                         <p>2017年国家重大科技专项申报已经全面启动。</p>
                                         <h4 class="square_button" onClick=""><strong>查看详情</strong></h4>
                                     </div>
                                 </div>
-                                <div class="single_portfolio tile scale-anm bcards" >
+                                <div class="single_portfolio tile scale-anm bcards clas_1 clas_2 clas_3 clas_4" >
                                     <img src="assets/images/pf8.jpg" alt="" />  
                                     <div class="grid_item_overlay">
                                         <p>2017年国家重大科技专项申报已经全面启动。</p>
                                         <h4 class="square_button" onClick=""><strong>查看详情</strong></h4>
                                     </div>
                                 </div>
-                                <div class="single_portfolio tile scale-anm web0" >
+                                <div class="single_portfolio tile scale-anm web0 clas_2 clas_3 clas_4" >
                                     <img src="assets/images/pf9.jpg" alt="" />
                                     <div class="grid_item_overlay">
                                         <p>2017年国家重大科技专项申报已经全面启动。</p>
                                         <h4 class="square_button" onClick=""><strong>查看详情</strong></h4>
                                     </div>
                                 </div> 
-                                <div class="single_portfolio tile scale-anm flyers">
+                                <div class="single_portfolio tile scale-anm flyers clas_1 clas_2 clas_3 clas_4">
                                     <img src="assets/images/pf6.jpg" alt="" />
                                     <div class="grid_item_overlay g_overlay_1">
                                         <p>2017年国家重大科技专项申报已经全面启动。</p>
                                         <h4 class="square_button" onClick=""><strong>查看详情</strong></h4>
                                     </div>
                                 </div>
-                                <div class="single_portfolio tile scale-anm bcards" >
+                                <div class="single_portfolio tile scale-anm bcards clas_3" >
                                     <img src="assets/images/pf7.jpg" alt="" />
                                     <div class="grid_item_overlay">
                                         <p>2017年国家重大科技专项申报已经全面启动。</p>
                                         <h4 class="square_button" onClick=""><strong>查看详情</strong></h4>
                                     </div>
                                 </div>
-                                <div class="single_portfolio tile scale-anm flyers">
+                                <div class="single_portfolio tile scale-anm flyers clas_1 clas_3">
                                     <img src="assets/images/pf6.jpg" alt="" />
                                     <div class="grid_item_overlay g_overlay_1">
                                         <p>2017年国家重大科技专项申报已经全面启动。</p>
                                         <h4 class="square_button" onClick=""><strong>查看详情</strong>
                                     </div>
                                 </div>
+                                <!-- <div class="single_portfolio tile scale-anm clas_1"   style="display:none;">
+                                    <img src="assets/images/pf2.jpg" alt="" />
+                                    <div class="grid_item_overlay">
+                                        <p>2017年国家重大科技专项申报已经全面启动。</p>
+                                        <h4 class="square_button" onClick=""><strong>查看详情</strong></h4>
+                                    </div>
+                                </div> -->
                             </div>
+
+                            
+
 
                         <div style="clear:both;"></div>  
 
@@ -364,7 +375,7 @@
 
                 <div id="lightbox" class="row">
 
-                    <div class="col-sm-6 col-md-3 col-lg-3 device0 sensor">
+                    <div class="col-sm-6 col-md-3 col-lg-3 device0 sensor gateway">
                         <div class="portfolio-item">
                             <div class="hover-bg">
                                 <a href="#">
@@ -380,7 +391,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3 col-lg-3 device0 sensor ">
+                    <div class="col-sm-6 col-md-3 col-lg-3 device0 sensor gateway">
                         <div class="portfolio-item">
                             <div class="hover-bg">
                                 <a href="#">
@@ -396,7 +407,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3 col-lg-3 device0 sensor ">
+                    <div class="col-sm-6 col-md-3 col-lg-3 device0 sensor gateway">
                         <div class="portfolio-item">
                             <div class="hover-bg">
                                 <a href="#">
@@ -412,7 +423,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3 col-lg-3 device0 sensor">
+                    <div class="col-sm-6 col-md-3 col-lg-3 device0 sensor gateway">
                         <div class="portfolio-item">
                             <div class="hover-bg">
                                 <a href="#">
@@ -428,7 +439,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3 col-lg-3 device0 sensor ">
+                    <div class="col-sm-6 col-md-3 col-lg-3 device0 camera brain">
                         <div class="portfolio-item">
                             <div class="hover-bg">
                                 <a href="#">
@@ -444,7 +455,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3 col-lg-3 device0 sensor camera">
+                    <div class="col-sm-6 col-md-3 col-lg-3 device0  camera brain">
                         <div class="portfolio-item">
                             <div class="hover-bg">
                                 <a href="#">
@@ -460,7 +471,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3 col-lg-3  device0 gateway">
+                    <div class="col-sm-6 col-md-3 col-lg-3  device0 camera brain">
                         <div class="portfolio-item">
                             <div class="hover-bg">
                                 <a href="#">
@@ -470,13 +481,13 @@
                                         <div class="clearfix"></div>
                                         <i class="fa fa-plus"></i> -->
                                     </div>
-                                    <img src="assets/images/07.jpg" class="img-responsive" alt="...">
+                                    <img src="assets/images/chuanganqi6.png" class="img-responsive" alt="...">
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-3 col-lg-3 device0 brain">
+                    <div class="col-sm-6 col-md-3 col-lg-3 device0 brain camera">
                         <div class="portfolio-item">
                             <div class="hover-bg">
                                 <a href="#">
@@ -486,7 +497,7 @@
                                         <div class="clearfix"></div>
                                         <i class="fa fa-plus"></i> -->
                                     </div>
-                                    <img src="assets/images/08.jpg" class="img-responsive" alt="...">
+                                    <img src="assets/images/chuanganqi6.png" class="img-responsive" alt="...">
                                 </a>
                             </div>
                         </div>

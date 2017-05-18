@@ -804,7 +804,7 @@
                 $.ajax({url: "/user/login",
                     type: "post",
                     dataType: "json",
-                    data: {name: name,psd: psd}, //"name=John&psd=Boston"
+                    data: {"name": name,"psd": psd}, //"name=John&psd=Boston"
                     context: document.body,
                     beforeSend: function(XMLHttpRequest){
 

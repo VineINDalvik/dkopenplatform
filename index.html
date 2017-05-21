@@ -801,6 +801,7 @@
                 if(name == null || psd == null) alert('用户名或密码不得为空！'); 
                 //if(!checkLoginValid(name,psd)) alert('输入符合');
                 //md5
+                var status = 1;
                 $.ajax({url: "/user/login",
                     type: "post",
                     dataType: "json",
@@ -811,9 +812,40 @@
                     },
                     success: function(data, textStatus){
                         if(data['code']){
-                            alert('登录成功');
+                            if(status){
+                                alert('个人用户登录成功');
+                                status--;
+                            }
                         }else{
-                            alert('登录失败');
+                            if(status)
+                                alert('个人用户登录失败');
+                        }
+                    },
+                    complete: function(XMLHttpRequest, textStatus){
+                        //HideLoading();
+                    },
+                    error: function(){
+                        //请求出错处理
+                    }
+                });
+
+                $.ajax({url: "/company/login",
+                    type: "post",
+                    dataType: "json",
+                    data: {"name": name,"psd": psd}, //"name=John&psd=Boston"
+                    context: document.body,
+                    beforeSend: function(XMLHttpRequest){
+
+                    },
+                    success: function(data, textStatus){
+                        if(data['code']){
+                            if(status){
+                                alert('企业用户登录成功');
+                                status--;
+                            }
+                        }else{
+                            if(status)
+                                alert('企业用户登录失败');
                         }
                     },
                     complete: function(XMLHttpRequest, textStatus){
